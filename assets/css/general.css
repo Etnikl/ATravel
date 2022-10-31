@@ -981,21 +981,24 @@ footer div.bottomfooter h4 {
     footer ul {
         margin: 0;
         list-style: none;
+        padding: 0;
     }
     footer .container .topfooter {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: space-between;
+        align-content: center;
+        text-align: center;
     }
     footer .container .topfooter .infofooter {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
     footer .container .topfooter .infofooter a img {
         display: flex;
-        height: 75px;
+        height: 60px;
     }
     footer .container .topfooter ul {
         font-weight: 700;
@@ -1008,9 +1011,16 @@ footer div.bottomfooter h4 {
     footer .container .topfooter ul li a:hover {
         color: var(--primary-100);
     }
+    footer .container .topfooter ul.sec {
+        margin-top: 30px;
+    }
     footer .container .topfooter ul.sec li a span{
         display: flex;
-        margin-top: 80px;
+        flex-flow: column wrap;
+        text-align: center;
+        align-self: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
         padding: 10px 12px;
         border-radius: 5px;
         background-color: var(--primary-80);
@@ -1018,10 +1028,15 @@ footer div.bottomfooter h4 {
         color: var(--light-20);
     }
     footer .container .topfooter .infofooter ul {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
         margin-top: 30px;   
     }
     footer .container .topfooter .infofooter ul li{
         display: flex;
+
         justify-content: space-between;
         align-items: center;
         gap: 10px;
@@ -1066,6 +1081,7 @@ footer div.bottomfooter h4 {
         padding: 20px 0px;
     }
     footer div.bottomfooter h4 {
+        font-size: 14px;
         color: var(--primary-100);
     }
 }
