@@ -1,0 +1,271 @@
+@import url(color.css);
+@import url(fonts.css);
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+    background-image:linear-gradient(180deg, rgba(65, 65, 65, 0.5), rgba(0, 0, 0, 0.2)), url(../images/bg.jpg);
+    background-size: cover;
+}
+div#login-container {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 30px;
+}
+div#signup-container {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 30px;
+}
+.information {
+    width: 450px;
+    height: 500px;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.information img {
+    width: 450px;
+    margin-bottom: 50px;
+}
+.information h1 {
+    margin-bottom: 0px;
+}
+.information h1::after {
+    content: '';
+    background-color: var(--primary-100);
+    width: 70%;
+    height: 2px;
+    position: relative;
+    top: 5px;
+    left: 15%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.information p {
+    margin-top: 10px;
+}
+.login-form {
+    width: 450px;
+    height: 500px;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 100px 60px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: -15px 1px 6px -4px rgba(150,150,150,0.8);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.signup-form {
+    width: 450px;
+    height: 500px;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 100px 60px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: -15px 1px 6px -4px rgba(150,150,150,0.8);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.login-intro {
+    text-align: center;
+}
+.login-intro p {
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+.login-intro h2 {
+    margin-bottom: 5px;
+}
+.content {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.2s;
+}
+.content form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+.content form .form-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-start;
+}
+.content form .form-item-other {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.content form .form-item-other .remberme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.content form .form-item-other .remberme input[type="checkbox"]{
+    accent-color: var(--primary-100);
+}
+.content form .form-item-other a {
+    text-decoration: none;
+    color: var(--primary-100);
+}
+.content form .form-item-other a:hover {
+    text-decoration: underline;
+}
+.content form .other-button {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.content form .other-button a {
+    text-decoration: none;
+    color: var(--primary-100);
+}
+.content form .other-button a:hover {
+    text-decoration: underline;
+}
+.content form .form-item label {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+.content form .form-item i {
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    font-size: 18px;
+}
+.content form .form-item i#toggle-eye {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    font-size: 18px;
+}
+.content form .form-item span.error-hidden {
+    display: none;
+}
+.content form .form-item span.error-show {
+    display: flex;
+    color: var(--error-80);
+    font-size: 12px;
+    padding-left: 6px;
+    margin-top: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.error {
+    border: 1px solid var(--error-40) !important;
+    background-color: var(--error-20) !important;
+}
+
+.info {
+    border: 1px solid var(--info-40) !important;
+    background-color: var(--info-20) !important;
+}
+.content form .form-item span.info-hidden {
+    display: none;
+}
+.content form .form-item span.info-show {
+    display: flex;
+    color: var(--info-80);
+    font-size: 12px;
+    padding-left: 6px;
+    margin-top: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.content form .form-item input[type="text"],
+.content form .form-item input[type="email"],
+.content form .form-item input[type="password"] {
+    display: flex;
+    align-self: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 2.5);
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgba(199, 199, 199, 0.5);
+}
+.content form input[type="button"]#submit {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: var(--primary-100);
+    color: white;
+}
+.content form input[type="button"]#submit:hover {
+    background-color: var(--primary-60);
+    color: white;
+}
+.content span a{
+    color: var(--dark-100);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+}
+.content span a:hover{
+    color: var(--primary-100);
+}
+    .content span i {
+    font-size: 20px;
+}
+.contentx {
+    display: none;
+    animation: fadeEffect 1s;
+    -webkit-animation: fadeEffect 1s;
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+
+

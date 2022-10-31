@@ -1,0 +1,58 @@
+:root {
+    /* Primary color scheme */
+        --primary-100: #f26630;
+        --primary-80: #f26C30;
+        --primary-60: #f27330;
+        --primary-40: #f27930;
+        --primary-20: #f28030;
+
+    /* Secondary color scheme */
+        --secondary-100: #051931;
+        --secondary-80: #0a315f;
+        --secondary-60: #0f498d;
+        --secondary-40: #1155a4;
+        --secondary-20: #1361bb;
+
+    /* Light color scheme */
+        --light-100: #cbcbcb;
+        --light-80: #d8d8d8;
+        --light-60: #e5e5e5;
+        --light-40: #f2f2f2;    
+        --light-20: #fafafa;
+
+
+    /* Dark color scheme */
+        --dark-100: #b6b6b6;
+        --dark-80: #c3c3c3;
+        --dark-60: #cfcfcf;
+        --dark-40: #dcdcdc;
+        --dark-20: #e9e9e9;
+
+    /* Success color scheme */
+        --success-100: #00d403;
+        --success-80: #3add3f;
+        --success-60: #74e77a;
+        --success-40: #aef0b5;
+        --success-20: #e8f9f1;
+
+    /* Error color scheme */
+        --error-100: #e90000;
+        --error-80: #ed3c3c;
+        --error-60: #f27777;
+        --error-40: #f6b3b3;
+        --error-20: #faeeee;
+
+    /* Warning color scheme */
+        --warning-100: #f7c800;
+        --warning-80: #f9d439;
+        --warning-60: #fbe071;
+        --warning-40: #fdecaa;
+        --warning-20: #fff8e2;
+
+    /* Info color scheme */
+        --info-100: #008bf8;
+        --info-80: #3ba4f8;
+        --info-60: #75bef9;
+        --info-40: #b0d7f9;
+        --info-20: #eaf1f9;
+}

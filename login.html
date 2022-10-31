@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/load.css">
+    <link rel="stylesheet" href="./assets/css/loginstyle.css">
+    <title>Travel Login</title>
+</head>
+<body>
+    <div class="container">
+        <div id="login-container" class="contentx">  
+            <div class="information">
+                <img src="./assets/images/logo.svg" alt="logo">
+                <h1>Welcome back!</h1>
+                <h3>To continue our journey with us please login with your personal info.</h3>
+            </div>
+            <div class="login-form">
+                <div class="loading"></div>
+                <div class="login-intro">
+                    <h2>Sign In</h2>
+                    <p>Please login to use platform for reservation</p>
+                </div>
+                <div class="content">
+                    <form id="form_id" method="post" name="myform" aria-live="polite" novalidate>
+                        <div class="form-item">
+                            <label for="username">Username</label>
+                            <i class="ti ti-mail"></i>
+                            <input type="text" name="username" id="username" placeholder="Type your username" required autofocus/>
+                            <span id="user-info" class="error-hidden">Username can not be empty!</span>
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password</label>
+                            <i class="ti ti-lock"></i>
+                            <input type="password" name="password" id="password" placeholder="Type your password" required />
+                            <span id="pass-info" class="error-hidden">Password can not be empty!</span>
+                        </div>
+                        <div class="form-item-other">
+                            <div class="remberme">
+                                <input type="checkbox" name="rememberMe" id="rememberMe">
+                                <label for="rememberMe">Remember Me</label>
+                            </div>
+                            <a href="#">I forgot my Password!</a>
+                        </div>
+                        <input type="button" value="Sign In" id="submit" onclick="validate()"/>
+                        <div class="other-button">
+                            Don't have an account? <a href="#" class="links" onclick="openform(event, 'signup-container')">Create a free account.</a>
+                        </div>
+                    </form>
+                    <span>
+                        <a href="./index.html">
+                            <i class="ti ti-arrow-back"></i>
+                            Get Back
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="signup-container" class="contentx">
+            <div class="information">
+                <img src="./assets/images/logo.svg" alt="logo">
+                <h1>Hello, <span>Friend!</span></h1>
+                <h3>Enter your personal details and start<br> journey with us.</h3>
+            </div>
+            <div class="signup-form">
+                <div class="loading"></div>
+                <div class="login-intro">
+                    <h2>Sign Up</h2>
+                    <p>Please login to use platform for reservation</p>
+                </div>
+                <div class="content">
+                    <form id="sform_id" method="post" name="mysform" aria-live="polite" novalidate>
+                        <div class="form-item">
+                            <label for="s-fullname">Full Name</label>
+                            <i class="ti ti-user"></i>
+                            <input type="text" name="s-fullname" id="s-name" placeholder="Type your full name" required autofocus min-length="4" max-length="20"/>
+                            <span id="name-info-s" class="info-hidden">Please write you name!</span>
+                        </div>
+                        <div class="form-item">
+                            <label for="s-username">Username</label>
+                            <i class="ti ti-mail"></i>
+                            <input type="text" name="s-username" id="s-username" placeholder="Type your username" required/>
+                            <span id="user-info-s" class="info-hidden">Please write your username!</span>
+                        </div>
+                        <div class="form-item">
+                            <label for="s-password">Password</label>
+                            <i class="ti ti-lock"></i>
+                            <input type="password" name="s-password" id="s-password" placeholder="Type your password" required />
+                            <span id="pass-info-s" class="info-hidden">Please add a password, and we're done!</span>
+                        </div>
+                        <div class="form-item-other">
+                            <div class="remberme">
+                                <input type="checkbox" name="rememberMe" id="rememberMe">
+                                <label for="rememberMe">I Agree with <a href="#">privatcy</a> and <a href="#">policy</a>.</label>
+                            </div>
+                        </div>
+                        <input type="button" value="Sign Up" id="submit" onclick="savedata()"/>
+                        <div class="other-button">
+                            Already have an account? <a href="#" class="links" onclick="openform(event, 'login-container')" id="defaultOpen">Sign In</a>
+                        </div>
+                    </form>
+                    <span>
+                        <a href="./index.html">
+                        <i class="ti ti-arrow-back"></i>
+                        Get Back
+                    </a></span>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script/login.js"></script>
+    <script src="./assets/script/signup.js"></script>
+    <script src="./assets/script/openform.js"></script>
+</body>
+</html>

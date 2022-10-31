@@ -1,0 +1,538 @@
+@import url(color.css);
+@import url(fonts.css);
+@import url(slider.css);
+@import url(button.css);
+* {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+
+body {
+    background-color: var(--dark-20);
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+nav.navmenu {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--light-20);
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav.navmenu .menu a {
+    color: var(--secondary-100);
+    font-size: 16px;
+}
+nav.navmenu .menu a:hover {
+    color: var(--primary-100);
+    margin-top: 4px;
+    border-bottom: 4px solid var(--primary-100);
+    transition: all 0.2s ease;
+}
+nav.navmenu .menu a.active {
+    margin-top: 4px;
+    color: var(--primary-100);
+    border-bottom: 4px solid var(--primary-100);
+    transition: all 0.2s ease;
+}
+div.logo {
+    display: flex;
+}
+div.logo img {
+    display: flex;
+    height: 50px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sidemenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+section#trends {
+    padding: 40px 0px 60px;
+    border-top: 2px solid var(--dark-100);
+    background-color: var(--light-80);
+}
+
+section#trends .container {
+    display: flex;
+    flex-direction: column;
+}
+section hgroup {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+section hgroup h2, h4{
+    margin: 0;
+}
+section hgroup h2{
+    margin-bottom: 5px;
+    font-size: 26px;
+    line-height: 26px;
+    color: var(--primary-80);    
+}
+section hgroup h4{
+    margin-bottom: 10px;
+    color: var(--secondary-100);    
+}
+section#trends .trendgr {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+section#trends .trendgr .trend-card {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    width: 22%;
+    height: 450px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--light-20);
+    background-color: var(--dark-40);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.4);
+}
+section#trends .trendgr .card1 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/unsp.jpg);
+    transition: all 0.5s ease;
+}
+section#trends .trendgr .card1:hover {
+    background-image: linear-gradient(180deg, rgba(65, 65, 65, 0.5), rgba(0, 0, 0, 0.2)), url(../images/unsp.jpg);
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+section#trends .trendgr .card2 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/unsp2.jpg);
+    transition: all 0.5s ease;
+}
+section#trends .trendgr .card2:hover {
+    background-image: linear-gradient(180deg, rgba(65, 65, 65, 0.5), rgba(0, 0, 0, 0.2)), url(../images/unsp2.jpg);
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+section#trends .trendgr .card3 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/unsp3.jpg);
+    transition: all 0.5s ease;
+}
+section#trends .trendgr .card3:hover {
+    background-image: linear-gradient(180deg, rgba(65, 65, 65, 0.5), rgba(0, 0, 0, 0.2)), url(../images/unsp3.jpg);
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+section#trends .trendgr .card4 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/unsp4.jpg);
+    transition: all 0.5s ease;
+}
+section#trends .trendgr .card4:hover {
+    background-image: linear-gradient(180deg, rgba(65, 65, 65, 0.5), rgba(0, 0, 0, 0.2)), url(../images/unsp4.jpg);
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+section#trends .trendgr .trend-card span.rating {
+    display: flex;
+    position: absolute;
+    margin-bottom: 370px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--light-20);
+    border: 1px solid var(--primary-40);
+    background-color: rgba(242, 128, 48, 0.5);
+}
+section#trends .trendgr .trend-card h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+section#trends .trendgr .trend-card p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+section#trends .trendgr .trend-card a.seemore {
+    font-size: 18px;
+    color: var(--light-20);
+    box-sizing: border-box;
+    background-color: var(--primary-80);
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+section#trends .trendgr .trend-card a.seemore:hover {
+    background-color: var(--light-20);
+    color: var(--primary-20);
+    transition: all 0.2s ease;
+}
+
+
+section#plans {
+    padding: 60px 0px 60px;
+}
+
+section#plans .plan-container, .infoplan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#plans .plan-container .infoplan p{
+    text-align: center;
+    width: 60%;
+}
+section#plans .plan-container .plans .plan h3{
+    margin-top: 5px;
+    color: var(--primary-100);
+}
+section#plans .plan-container .plans {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+section#plans .plan-container .plans .plan {
+    display: flex;
+    flex-flow: column wrap;
+    width: 33%;
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+section#plans .plan-container .plans .plan img{
+    width: 20%;
+}
+section#enjoy {
+    display: flex;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/enjoy-camping.jpg);
+    padding: 60px 0px 60px;
+}
+section#enjoy .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+section#enjoy .container .reservnow{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 300px;
+    color: var(--light-60);
+    width: 25%;
+    height: auto;
+    border-radius: 20px;
+    padding: 60px;
+    background-color: var(--secondary-100);
+}
+section#enjoy .container .reservnow h1{
+    color: var(--light-20);
+}
+section#enjoy .container .reservnow a{
+    border-radius: 50px;
+}
+section#specials {
+    display: flex;
+    height: auto;
+    padding: 60px 0px 60px;
+}
+section#specials .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+section#specials .container .specialsgr {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+section#specials .container .specialsgr .specialscard {
+    display: flex;
+    flex-flow: column wrap;
+    width: 22%;
+    overflow: hidden;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: var(--dark-60);
+    text-align: center;
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.4);
+}
+section#specials .container .specialsgr .specialscard .imgwrapper {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+section#specials .container .specialsgr .specialscard .imgwrapper1 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/special-bg1.jpg);
+} 
+section#specials .container .specialsgr .specialscard .imgwrapper2 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/special-bg2.jpg);
+}   
+section#specials .container .specialsgr .specialscard .imgwrapper3 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/special-bg3.jpg);
+}   
+section#specials .container .specialsgr .specialscard .imgwrapper4 {
+    background-image: linear-gradient(180deg, rgba(242, 102, 48, 0.5), rgba(242, 102, 48, 0.8)), url(../images/special-bg4.jpg);
+}    
+section#specials .container .specialsgr .specialscard .imgwrapper img {
+    display: flex;
+    width: 100%;
+}
+section#specials .container .specialsgr .specialscard .specialicone {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+section#specials .container .specialsgr .specialscard .specialicone img {
+    position: relative;
+    width: 25%;
+    bottom: 20%;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.4);
+    background-color: var(--dark-40);
+}
+section#specials .container .specialsgr .specialscard .specialicone h2 {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    color: var(--secondary-80);
+}
+
+section#lastdeals {
+    display: flex;
+    height: auto;
+    padding: 60px 0px 60px;
+    background-color: var(--light-80);
+}
+section#lastdeals .container .deals {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+section#lastdeals .container .deals .deal-card {
+    display: flex;
+    padding-top: 30px;
+    flex-flow: column wrap;
+    width: 30%;
+}
+section#lastdeals .container .deals .deal-card a{
+    display: flex;
+    flex-flow: column wrap;
+    height: 450px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: aqua;
+    border-radius: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+section#lastdeals .container .deals .deal-card a span.badge {
+    padding: 5px 10px; 
+    background-color: var(--dark-20);
+    border-radius: 5px;
+    color: var(--secondary-100);
+}
+section#lastdeals .container .deals .deal-card a div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-items: space-between;
+    gap: 20px;
+}
+section#lastdeals .container .deals .deal-card a div h3{
+    display: flex;
+    color: var(--light-20);
+    font-size: 23px;
+    font-weight: 400;
+}
+section#lastdeals .container .deals .deal-card a div p{
+    display: flex;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: var(--secondary-80);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-60);
+}
+section#lastdeals .container .deals .deal-card .scard1 {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(5, 25, 49, 0.8), rgba(5, 25, 49, 0.2)) ,url(../images/deals-santorini.jpg);
+}   
+section#lastdeals .container .deals .deal-card .scard1:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(0deg, rgba(5, 25, 49, 0.1), rgba(5, 25, 49, 0.0)) ,url(../images/deals-santorini.jpg);
+    transition: all 0.2s ease-in-out;
+}    
+section#lastdeals .container .deals .deal-card .scard2 {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(5, 25, 49, 0.8), rgba(5, 25, 49, 0.2)) ,url(../images/deals-venecia.jpg);
+} 
+section#lastdeals .container .deals .deal-card .scard2:hover {  
+    transform: scale(1.05);
+    background-image: linear-gradient(0deg, rgba(5, 25, 49, 0.1), rgba(5, 25, 49, 0.0)) ,url(../images/deals-venecia.jpg);
+    transition: all 0.2s ease-in-out;
+}    
+section#lastdeals .container .deals .deal-card .scard3 {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(5, 25, 49, 0.8), rgba(5, 25, 49, 0.2)) ,url(../images/deals-egypt.jpg);
+} 
+section#lastdeals .container .deals .deal-card .scard3:hover {  
+    transform: scale(1.05);
+    background-image: linear-gradient(0deg, rgba(5, 25, 49, 0.1), rgba(5, 25, 49, 0.0)) ,url(../images/deals-egypt.jpg);
+    transition: all 0.2s ease-in-out;
+}  
+section#lastdeals .container .deals .deal-card a:hover > div h3 {
+    color: var(--primary-100);
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}    
+section#lastdeals .container .deals .deal-card a:hover > span {
+    transition: all 0.2s ease-in-out;
+    color: var(--primary-100);
+} 
+section#lastdeals .container .deals .deal-card .scard1:hover > div p {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+} 
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--light-20);
+    padding-top: 60px;
+    background-color: var(--secondary-100);
+}
+footer ul {
+    margin: 0;
+    list-style: none;
+}
+footer .container .topfooter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+footer .container .topfooter .infofooter {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer .container .topfooter .infofooter a img {
+    display: flex;
+    height: 75px;
+}
+footer .container .topfooter ul {
+    font-weight: 700;
+    color: var(--primary-100);
+}
+footer .container .topfooter ul li a {
+    font-weight: 100;
+    color: var(--light-20);
+}
+footer .container .topfooter ul li a:hover {
+    color: var(--primary-100);
+}
+footer .container .topfooter ul.sec li a span{
+    display: flex;
+    margin-top: 80px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color: var(--primary-80);
+    font-weight: 100;
+    color: var(--light-20);
+}
+footer .container .topfooter .infofooter ul {
+    margin-top: 30px;   
+}
+footer .container .topfooter .infofooter ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 100;
+    color: var(--light-20);
+
+}
+footer .container .topfooter .infofooter ul li i {
+    font-weight: 100;
+    color: var(--light-20);
+    margin-left: 5px;
+    font-size: 20px;
+}
+footer .container .topfooter .infofooter .socialicone {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 10px;
+}
+footer .container .topfooter .infofooter .socialicone a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-20);
+    color: var(--primary-100);
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 50px;
+}
+footer .container .topfooter .infofooter .socialicone a:hover {
+    background-color: var(--primary-100);
+    color: var(--light-20);
+}
+footer div.bottomfooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: var(--dark-20);
+    margin-top: 60px;
+    padding: 20px 0px;
+}
+footer div.bottomfooter h4 {
+    color: var(--primary-100);
+}

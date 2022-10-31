@@ -1,0 +1,25 @@
+.solid-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--light-20);
+    background-color: var(--primary-100);
+    transition: all 0.4s ease;
+}
+.solid-button:hover {
+    border: 2px solid var(--primary-100);
+    background-color: transparent;
+    color: var(--primary-100);
+    transition: all 0.2s ease;
+}
+.solid-sec-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--light-20);
+    background-color: var(--primary-100);
+    transition: all 0.4s ease;
+}
+.solid-sec-button:hover {
+    background-color: var(--light-20);
+    color: var(--primary-100);
+    transition: all 0.2s ease;
+}
