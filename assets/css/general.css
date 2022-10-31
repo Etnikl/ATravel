@@ -579,6 +579,7 @@ footer div.bottomfooter h4 {
     }
     div.logo {
         display: flex;
+        align-items: center;
     }
     div.logo img {
         display: flex;
