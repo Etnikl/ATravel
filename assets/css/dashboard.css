@@ -1,0 +1,458 @@
+@import url(color.css);
+@import url(fonts.css);
+@import url(slider.css);
+@import url(button.css);
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--dark-20);
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+div.dashboard {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 1fr;
+}
+aside {
+    display: grid;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--dark-20);
+    box-shadow: 14px 16px 48px -11px rgba(0,0,0,0.4);
+}
+aside .navside {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-content: center;
+}
+aside .navside .logo {
+    display: flex;
+    flex-flow: column;
+    padding: 15px 0px;
+    align-items: center;
+    justify-content: center;
+}
+aside .navside .logo img {
+    display: flex;
+    width: 60px;
+}
+aside .navside nav {
+    display: flex;
+    flex-flow: column;
+}
+aside .navside nav a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-40);
+    padding: 15px 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    color: var(--secondary-80);
+    box-shadow: 2px 6px 10px -6px rgba(0,0,0,0.2);
+}
+aside .navside nav a:hover {
+    color: var(--primary-100);
+    transition: all 0.3s ease;
+}
+aside .navside nav a.active {
+    color: var(--light-40);
+    background-color: var(--primary-100);
+    box-shadow: 2px 6px 10px -6px rgba(0,0,0,0.2);
+}
+aside .navside nav a i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+aside .navside nav a span {
+    font-size: 10px;
+}
+aside .navside .profile {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+}
+aside .navside .profile .avatar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-100);
+}
+aside .navside .profile .avatar a img {
+    display: flex;
+    width: 50px;
+}
+aside .navside .profile span a {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--secondary-80);
+}
+aside .navside .profile span a:hover {
+
+    color: var(--primary-100);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+aside .navside .profile span p {
+    margin-left: 5px;
+}
+main {
+    display: grid;
+    overflow-y: scroll;
+    height: 100%;
+    background-color: blueviolet;
+}
+.maindash {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--light-20);
+    padding: 30px 30px 30px 80px;
+}
+.maindash section#header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.maindash section#header .information {
+    display: flex;
+    flex-flow: column;
+}
+.maindash section#header .information .search {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    margin-top: 20px;
+}
+.maindash section#header .information form input[type="search"] {
+    display: flex;
+    align-self: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
+    padding-left: calc(1rem * 2.5);
+    border-radius: 50px;
+    border-style: none;
+    background-color: rgba(199, 199, 199, 0.5);
+}
+.maindash section#header .information button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    color: var(--light-20);
+    background-color: var(--primary-100);
+    transition: all 0.4s ease;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.maindash section#header .information button:hover {
+    padding: 10px 20px;
+    background-color: var(--primary-80);
+}
+.maindash section#header .information form .searchtype {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-start;
+}
+.searchtype i {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    font-size: 18px;
+}
+.maindash section#header .information form i {
+    font-size: 20px;
+}
+.maindash section#header .information h1 {
+    font-size: 30px;
+    margin-top: 0px;
+}
+.maindash section#header .information h5 {
+    font-weight: 100;
+    margin-left: 2px;
+}
+.maindash section#header .otherinfo {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 50px;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+.maindash section#header .otherinfo .weather {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.maindash section#header .otherinfo .weather span {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 50px;
+    line-height: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--secondary-100);
+}
+.maindash section#header .otherinfo .weather span i {
+    font-size: 40px;
+
+}
+.maindash section#header .otherinfo .divider {
+    display: flex;
+    width: 2px;
+    height: 60px;
+    margin: 0px 30px;
+    align-self: center;
+    background-color: var(--dark-60);
+}
+.maindash section#header .otherinfo .daytoday {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--secondary-100);
+}
+.maindash section#header .otherinfo .daytoday span h1 {
+    font-size: 40px;
+}
+.maindash section#header .otherinfo .daytoday hgroup h6:first-child {
+    color: var(--primary-40)
+}
+.maindash section#header .otherinfo .weather hgroup h6:last-child {
+    font-weight: 100;
+}
+.maindash section#header .otherinfo .weather hgroup h6:first-child {
+    color: var(--primary-40)
+}
+.maindash section#Home {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-top: 50px;
+}
+.maindash section#Home .popular {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.maindash section#Home .popular .popularcards {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    width: 90%;
+    height: auto;
+    gap: 30px;
+}
+.maindash section#Home .popular .popularcards .popularcard {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    width: 22%;
+    background-color: var(--light-60);
+    box-shadow: 7px 7px 15px -2px rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+.maindash section#Home .popular .popularcards .popularcard span {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-items: flex-end;
+    align-items: flex-end;
+    width: auto;
+    height: auto;
+}
+.maindash section#Home .popular .popularcards .popularcard span input[type="checkbox"] {
+    display: none;
+}
+.maindash section#Home .popular .popularcards .popularcard span label i {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-self: flex-end;
+    padding: 10px;
+    background-color: rgba(242, 128, 48, 0.8);
+    border-radius: 5px;
+    top: 10px;
+    right: 10px;
+    z-index: 85;
+}
+.maindash section#Home .popular .popularcards .popularcard span label i::before {
+    content: url(../images/lineheart.svg);
+    width: 22px;
+    height: 22px;
+}
+.maindash section#Home .popular .popularcards .popularcard span input[type="checkbox"]:checked+label i::before{
+    transition: all 0.5s ease-in-out;
+    content: url(../images/heart.svg);
+  
+}
+.maindash section#Home .popular .popularcards .popularcard span p {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    top: 160px;
+    right: 10px;
+    z-index: 86;
+}
+.maindash section#Home .popular .popularcards .popularcard .wrapper {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.maindash section#Home .popular .popularcards .popularcard .wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms;
+}
+.maindash section#Home .popular .popularcards .popularcard .wrapper:hover img{
+    transform: scale(1.2);
+}
+.maindash section#Home .info {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.maindash section#Home .info h4 {
+    font-size: 16px;
+    line-height: 16px;
+}
+.maindash section#Home .info p {
+    font-size: 12px;
+}
+.maindash section#Home .info .travels {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.maindash section#Home .info .travels p {
+    font-size: 11px;
+    color: var(--secondary-40);
+}
+.maindash section#Home .info .travels a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--light-20);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--primary-80);
+    transition: background-color 200ms;
+}
+.maindash section#Home .info .travels a:hover {
+    background-color: var(--primary-20);
+}
+.maindash section.dashboardtab {
+    display: none;
+}
+.maindash section#Home .hotels {
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+    width: 100%;
+}
+.maindash section#Home .hotels .hotelcards {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    width: 100%;
+    gap: 30px;
+}
+.maindash section#Home .hotels .hotelcards .hotelcard{
+    display: flex;
+    flex-flow: row;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 42%;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: var(--dark-20);
+    box-shadow: 7px 7px 15px -2px rgba(0,0,0,0.2);
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .texthotel {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 70%;
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .texthotel p {
+    font-size: 14px;
+    color: var(--secondary-100);
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .texthotel .other {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .texthotel .other .star span {
+    color: var(--light-20);
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .texthotel .other .star span.checked {
+    color: var(--primary-100);
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .texthotel .other h2 {
+    color: var(--primary-100);
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .texthotel .other h2 span {
+    font-size: 14px;
+    color: var(--secondary-80);
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .wrapper {
+    display: flex;
+    width: 25%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.maindash section#Home .hotels .hotelcards .hotelcard .wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms;
+}

@@ -5,7 +5,7 @@
         --primary-60: #f27330;
         --primary-40: #f27930;
         --primary-20: #f28030;
-
+        --primary-20: rgb(242, 128, 48);
     /* Secondary color scheme */
         --secondary-100: #051931;
         --secondary-80: #0a315f;

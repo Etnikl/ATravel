@@ -4,11 +4,297 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
     <link rel="stylesheet" href="./assets/css/load.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
-    <div class="loading"></div>
-    <a href="./login.html">BACK</a>
+    <div class="dashboard">
+        <aside>
+            <div class="navside">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/images/icone.svg" alt="LogoIcone">
+                    </a>
+                </div>
+                <nav>
+                    <a href="#"  class="dashboardlinks" onclick="openDash(event, 'Home')" id="mainview">
+                        <i class="ti ti-tent"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="dashboardlinks"  onclick="openDash(event, 'Dashboard')">
+                        <i class="ti ti-layout-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="dashboardlinks"  onclick="openDash(event, 'Favourite')">
+                        <i class="ti ti-heart"></i>
+                        <span>Favourite</span>
+                    </a>
+                    <a href="#"class="dashboardlinks"   onclick="openDash(event, 'Destination')">
+                        <i class="ti ti-directions"></i>
+                        <span>Destination</span>
+                    </a>
+                    <a href="#" class="dashboardlinks"  onclick="openDash(event, 'Deals')">
+                        <i class="ti ti-bell"></i>
+                        <span>Best Deals</span>
+                    </a>
+                </nav>
+                <div class="profile">
+                    <div class="avatar">
+                        <a href="./profile.html">
+                            <img src="./assets/images/useravatar.svg" alt="avatar">
+                        </a>
+                    </div>
+                    
+                    <span>
+                        <a href="./login.html">
+                            <i class="ti ti-logout"></i>
+                            <p>Log Out</p>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="maindash">
+                <section id="header">
+                    <div class="information">
+                        <h5>Hey there, traveler!</h5>
+                        <h1>Explore the beauty of our planet</h1>
+                        <div class="search">
+                            <form action="">
+                                <div class="searchtype">
+                                    <i class="ti ti-search"></i>
+                                    <input type="search" name="search" id="search" placeholder="Search destination...">
+                                </div>
+                            </form>
+                            <button type="submit">Search</button>
+                        </div>
+                    </div>
+                    <div class="otherinfo">
+                        <div class="weather">
+                            <span>
+                                <i class="ti ti-cloud-rain"></i>
+                                <p>20°</p>
+                            </span>
+                            <hgroup>
+                                <h6>Rainy</h6>
+                                <h6>Weather</h6>
+                            </hgroup>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="daytoday">
+                            <span class="time">
+                                <h1>14:55pm</h1>
+                            </span>
+                            <hgroup>
+                                <h6>Thursday</h6>
+                                <h6>October 5</h6>
+                            </hgroup>
+                        </div>
+                    </div>
+                </section>
+                <section id="Home" class="dashboardtab" style="display: flex;">
+                    <div class="popular">
+                        <h1>Popular Destinations</h1>
+                        <div class="popularcards">
+                            <div class="popularcard">
+                                <span>
+                                    <input type="checkbox" name="favourite" id="fav1">
+                                    <label for="fav1">
+                                        <i></i>
+                                    </label>
+                                    <p>499€</p>
+                                </span>
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp.jpg" alt="mountain">
+                                </div>
+                                <div class="info">
+                                    <h4>Mountain Hiking Tour</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="travels">
+                                        <div>
+                                            <p>12 Places</p>
+                                            <p>13 Activites</p>
+                                        </div>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popularcard">
+                                <span>
+                                    <input type="checkbox" name="favourite" id="fav2">
+                                    <label for="fav2">
+                                        <i></i>
+                                    </label>
+                                    <p>499€</p>
+                                </span>
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp2.jpg" alt="mountain">
+                                </div>
+                                <div class="info">
+                                    <h4>Forest Wild Life</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="travels">
+                                        <div>
+                                            <p>12 Places</p>
+                                            <p>13 Activites</p>
+                                        </div>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popularcard">
+                                <span>
+                                    <input type="checkbox" name="favourite" id="fav3">
+                                    <label for="fav3">
+                                        <i></i>
+                                    </label>
+                                    <p>499€</p>
+                                </span>
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp3.jpg" alt="mountain">
+                                </div>
+                                <div class="info">
+                                    <h4>Train Tour Skyline</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="travels">
+                                        <div>
+                                            <p>12 Places</p>
+                                            <p>13 Activites</p>
+                                        </div>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popularcard">
+                                <span>
+                                    <input type="checkbox" name="favourite" id="fav4">
+                                    <label for="fav4">
+                                        <i></i>
+                                    </label>
+                                    <p>499€</p>
+                                </span>
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp3.jpg" alt="mountain">
+                                </div>
+                                <div class="info">
+                                    <h4>Sea Side Tour</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="travels">
+                                        <div>
+                                            <p>12 Places</p>
+                                            <p>13 Activites</p>
+                                        </div>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotels">
+                        <h1>Best Rated Hotels</h1>
+                        <div class="hotelcards">
+                            <div class="hotelcard">
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp.jpg" alt="mountain">
+                                </div>
+                                <div class="texthotel">
+                                    <h3>Clean and modern apartament in Hawaii</h3>
+                                    <p>2 bedrooms - 1 bathroom - 1 kitchen</p>
+                                    <div class="other">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h2>85€<span>/night</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hotelcard">
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp.jpg" alt="mountain">
+                                </div>
+                                <div class="texthotel">
+                                    <h3>Clean and modern apartament in Hawaii</h3>
+                                    <p>2 bedrooms - 1 bathroom - 1 kitchen</p>
+                                    <div class="other">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h2>85€<span>/night</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hotelcard">
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp.jpg" alt="mountain">
+                                </div>
+                                <div class="texthotel">
+                                    <h3>Clean and modern apartament in Hawaii</h3>
+                                    <p>2 bedrooms - 1 bathroom - 1 kitchen</p>
+                                    <div class="other">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h2>85€<span>/night</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hotelcard">
+                                <div class="wrapper">
+                                    <img src="./assets/images/unsp.jpg" alt="mountain">
+                                </div>
+                                <div class="texthotel">
+                                    <h3>Clean and modern apartament in Hawaii</h3>
+                                    <p>2 bedrooms - 1 bathroom - 1 kitchen</p>
+                                    <div class="other">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h2>85€<span>/night</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="Dashboard" class="dashboardtab">
+                    <h1>dsadadsada</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo quod nisi placeat magni sed vel commodi iusto nesciunt tempore, molestias vero dolorem consequatur nam ipsum eveniet quae neque pariatur.</p>
+                </section>
+                <section id="Favourite" class="dashboardtab">
+                    <h1>dsadadsada</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo quod nisi placeat magni sed vel commodi iusto nesciunt tempore, molestias vero dolorem consequatur nam ipsum eveniet quae neque pariatur.</p>
+                </section>
+                <section id="Destination" class="dashboardtab">
+                    <h1>dsadadsada</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo quod nisi placeat magni sed vel commodi iusto nesciunt tempore, molestias vero dolorem consequatur nam ipsum eveniet quae neque pariatur.</p>
+                </section>
+                <section id="Deals" class="dashboardtab">
+                    <h1>dsadadsada</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo quod nisi placeat magni sed vel commodi iusto nesciunt tempore, molestias vero dolorem consequatur nam ipsum eveniet quae neque pariatur.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/script/dashboard.js"></script>
 </body>
 </html>
